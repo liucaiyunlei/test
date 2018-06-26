@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src='jquery-1.8.2.min.js'></script>
+   <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+      .banner{
+        min-width: 1200px;
+        height: 622px;
+        background: url(./images/safety/banner.png) no-repeat top center;
+      }
+      .banner2{
+       width: 100%;
+        height: 100px;
+        background:url(./images/safety/bj.png) no-repeat top center;
+        margin-top: -111px ;       
+      }
+      .fiexd{
+        width: 100%;
+        height: 100px;
+         position:fixed;
+        top:0px;
+        left:50%;
+        margin:0 0 100px -50%;
+       
+      }
+      .safety_header{
+        width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+
+      }
+      .safety_header li{
+        float: left;
+        width: 150px;
+        height: 100px;
+        margin: 0 15px;
+      }
+      .safety_header  a{
+        display: block;
+        width: 84px;
+        height: 52px;
+        margin: 0 auto;
+        margin-top: 20px;
+        
+      }
+      .safety_header .current{
+        background:url(./images/safety/hover_bj.png) no-repeat top center 
+      }
+     .safety_header .a1{
+        background: url(./images/safety/1.png) no-repeat top center;
+      }
+     .safety_header .a2{
+        background: url(./images/safety/2.png) no-repeat top center;
+      }
+     .safety_header .a3{
+        
+        background: url(./images/safety/3.png) no-repeat top center;
+      }
+     .safety_header .a4{
+       width: 57px;
+          height: 51px;
+        background: url(./images/safety/4.png) no-repeat top center;
+      }
+     .safety_header .a5{
+      width: 98px;
+      height: 51px;
+        background: url(./images/safety/5.png) no-repeat top center;
+      }
+     .safety_header .a6{
+      width: 56px;
+      height: 52px;
+        background: url(./images/safety/6.png) no-repeat top center;
+      }
+      .current .a1{
+        background: url(./images/safety/h1.png) no-repeat top center;
+      }
+     .current .a2{
+        background: url(./images/safety/h2.png) no-repeat top center;
+      }
+     .current .a3{
+        
+        background: url(./images/safety/h3.png) no-repeat top center;
+      }
+     .current .a4{
+       width: 57px;
+          height: 51px;
+        background: url(./images/safety/h4.png) no-repeat top center;
+      }
+     .current .a5{
+      width: 98px;
+      height: 51px;
+        background: url(./images/safety/h5.png) no-repeat top center;
+      }
+     .current .a6{
+      width: 56px;
+      height: 52px;
+        background: url(./images/safety/h6.png) no-repeat top center;
+      }
+
+    .safety_title{
+      width: 1200px;
+      height: 80px;
+      margin: 0 auto;
+      background: #fff;
+      padding-top: 40px;
+    }
+    .safety_title p{
+      float: left;
+      margin-left: 60px;
+      margin-right: 15px;
+    }
+    .safety_title span{
+      font-family: '微软雅黑';
+      font-size: 20px;
+      color: #080b1a;
+      text-align: left;
+      line-height: 22px;
+
+    }
+    .safety_title img{
+      float: left;
+       margin-right: 20px;
+    }
+    .safety_title em{
+      font-family: '微软雅黑';
+      font-size: 16px;
+      color: #666666;
+    }
+    .banner3{
+      min-width: 1200px;
+      height: 666px;
+      margin: 0 auto;
+      background: url(./images/safety/banner1.png) no-repeat top center;
+    }
+     .banner4{
+      min-width: 1200px;
+      height: 761px;
+      margin: 0 auto;
+      background: url(./images/safety/banner2.png) no-repeat top center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+     .banner5{
+      min-width: 1200px;
+      height: 689px;
+      margin: 0 auto;
+      background: url(./images/safety/banner3.png) no-repeat top center;
+    }
+     .banner6{
+      min-width: 1200px;
+      height: 717px;
+      margin: 0 auto;
+      background: url(./images/safety/banner4.png) no-repeat top center;
+    }
+    .banner7{
+      min-width: 1200px;
+      height: 750px;
+      margin: 0 auto;
+      background: #fff;
+    }
+    .banner7_title{
+      width: 1191px;
+      height: 69px;
+      margin: 0 auto;
+      background: url(./images/safety/title.png) no-repeat top center;
+      margin-top: 40px;
+    }
+    .images{
+      width: 1200px;
+      height: 553px;
+      margin: 0 auto;
+      padding-top: 20px;
+
+    }
+    .divs{
+      width: 100%;
+      height: 100px;
+      display: inline-block;
+    }
+   </style>
+</head>
+<body>
+  <div class="banner"></div>
+      <div class="fiexd_div" style='min-width: 1200px;height: 100px'>
+          <div style='width: 100%;' >
+            <div class="banner2">
+            <div class="safety_header">
+                <ul>
+                  <li><a href="#a1" class="a1"></a></li>
+                  <li><a href="#a2" class="a2"></a></li>
+                  <li><a href="#a3" class="a3"></a></li>
+                  <li><a href="#a4" class="a4"></a></li>
+                  <li><a href="#a5" class="a5"></a></li>
+                  <li><a href="#a6" class="a6"></a></li>
+                </ul>
+            </div> 
+          </div>
+          <span class="divs" style=""></span>
+          </div>
+      </div>
+      <div id='a1' class="safety_title">
+         <p>
+         <img src="./images/safety/a3.png" />
+         <span>
+            3年111天
+            <br>
+           <em>安全运营</em>
+         </span>
+         </p>
+         <p>
+         <img src="./images/safety/a4.png" />
+         <span>
+            23亿2618万8794元
+            <br>
+           <em>累计撮合金额</em>
+         </span>
+         </p>
+         <p>
+         <img src="./images/safety/a5.png" />
+         <span>
+            1亿4999万7932元
+            <br>
+           <em>为出借人赚取</em>
+         </span>
+         </p>
+         <p>
+         <img src="./images/safety/a6.png" />
+         <span>
+            54万4371元
+            <br>
+           <em>注册人数</em>
+         </span>
+         </p>
+      </div>
+      <div id='a2' class="banner3"></div>
+      <div id='a3' class="banner4"></div>
+      <div id='a4' class="banner5"></div>
+      <div id='a5' class="banner6"></div>
+      <div id='a6' class="banner7">
+        <div class="banner7_title"></div>
+        <div class="images">
+          <img style="margin-right:17px" src="./images/safety/a1.png"  />
+          <img src="./images/safety/a2.png"  />
+        </div>
+        
+      </div>
+     
+  <script>
+   $(function(){ 
+            //置顶按钮显示/隐藏实现
+            $(window).scroll(function(){
+                var w_height = $(window).height();//浏览器高度
+                var scroll_top = $(document).scrollTop();
+                console.log(scroll_top);
+                //滚动条到顶部的垂直高度
+                if(scroll_top > 561){
+                        $(".banner2").addClass('fiexd');
+                        $(".divs").css({
+                          'margin-bottom':'100px',
+                        });
+                        $(".safety_title").css({
+                          'margin-top':'-100px',
+                        });
+                       
+                    }else{
+                        $(".banner2").removeClass('fiexd');
+                        $(".divs").css({
+                          'margin-bottom':'0px',
+                        });
+                        $(".safety_title").css({
+                          'margin-top':'0px',
+                        });
+                        
+                }
+            });
+          })
+  
+  $('.safety_title p').hover(function(){
+    $(this).css({
+      "transform": "translateY(-6px)",
+      "-o-transform": "translateY(-6px)",
+      "-ms-transform": "translateY(-6px)",
+      "-moz-transform": "translateY(-6px)",
+      "-webkit-transform": "translateY(-6px)",
+      "transition-duration": ".4s",
+    });
+  },function(){
+    $(this).css({
+      "transform": "translateY(0)",
+      "-o-transform": "translateY(0)",
+      "-ms-transform": "translateY(0)",
+      "-moz-transform": "translateY(0)",
+      "-webkit-transform": "translateY(0)",
+      "transition-duration": ".4s",
+    })
+  })
+   $('.images img').hover(function(){
+    $(this).css({
+      "transform": "translateY(-6px)",
+      "-o-transform": "translateY(-6px)",
+      "-ms-transform": "translateY(-6px)",
+      "-moz-transform": "translateY(-6px)",
+      "-webkit-transform": "translateY(-6px)",
+      "transition-duration": ".4s",
+    });
+  },function(){
+    $(this).css({
+      "transform": "translateY(0)",
+      "-o-transform": "translateY(0)",
+      "-ms-transform": "translateY(0)",
+      "-moz-transform": "translateY(0)",
+      "-webkit-transform": "translateY(0)",
+      "transition-duration": ".4s",
+    })
+  })
+    $('.safety_header li').hover(function(){
+          $(this).addClass('current');
+  },function(){
+    $(this).removeClass('current');
+
+  })
+     
+  </script>
+</body>
+</html>
